@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Mark As Done",
+  "version": "1.0",
+  "description": "Automatically clicks all 'Mark as done' buttons.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://amigolms.amityonline.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
